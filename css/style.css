@@ -13,9 +13,11 @@ header {
 	width: 1518px;
 	height: 2000px;
 	background:
+		url(../img/background-gradient.png) 0 495px no-repeat,
 		url(../img/background.jpg) 50% -20px no-repeat,
-		url(../img/background-substrate.png) no-repeat;
-	background-size: 1300px auto, contain;
+		url(../img/background-substrate.png) no-repeat,
+		url(../img/background-wood.jpg) no-repeat;
+	background-size: contain,1300px auto, contain, contain;
 	padding-top: 280px;
 	text-align: center;
 }
