@@ -4,12 +4,23 @@
 	padding: 0px;
 }
 
-header {
+.wrapper {
+	min-width:998px;
+	overflow:hidden;
+	-moz-background-size:100%;
+	-webkit-background-size:100%;
+	-o-background-size:100%;
+	background-size:100%;
+}
+
+.header {
 	width: 1518px;
-	height: 1051px;
+	height: 805px;
+	margin: 0 auto;
 }
 
 .header-wrapper {
+	position: relative;
 	width: 1518px;
 	height: 1051px;
 	background:
@@ -17,7 +28,7 @@ header {
 		url(../img/background.jpg) 50% -20px no-repeat,
 		url(../img/background-substrate.png) no-repeat,
 		url(../img/background-wood.jpg) no-repeat;
-	background-size: contain,1300px auto, contain, contain;
+	background-size: contain,1300px auto, 1518px 1050px, contain;
 	padding-top: 280px;
 	text-align: center;
 }
@@ -35,6 +46,7 @@ header {
 }
 
 .menu {
+	position: relative;
 	display: flex;
 	width: 600px;
 	margin-right: auto;
@@ -68,6 +80,7 @@ header {
 	height: 1280px;
 	background: url(../img/background-tatoo.jpg) no-repeat;
 	background-size: 1518px auto;
+	margin: 0 auto;
 }
 
 .container {
@@ -77,6 +90,10 @@ header {
 }
 
 .nav-item {
+	position: absolute;
+	right: -350px;
+	bottom: -480px;
+	z-index: 9999;
 	display: flex;
 	justify-content: space-between;
 	width: 750px;
@@ -99,6 +116,7 @@ header {
 }
 
 .about-header {
+	padding-top: 175px;
 	display: block;
 	font-size: 40px;
 	color: black;
@@ -170,6 +188,7 @@ header {
 .services {
 	height: 851px;
 	width: 1518px;
+	margin: 0 auto;
 }
 .services-pic-wrapper {
 	height: 100%;
@@ -261,6 +280,7 @@ header {
 .works {
 	width: 1518px;
 	padding-bottom:40px;
+	margin: 0 auto;
 
 }
 
@@ -291,9 +311,12 @@ header {
 }
 
 .sertificates {
+	width: 1518px;
+	height: 963px;
 	padding-top: 27px;
 	padding-bottom: 7px;
 	background: #767897;
+	margin: 0 auto;
 }
 
 .sertificates-wrapper {
@@ -308,4 +331,108 @@ header {
 	width: 320px;
 	height: auto;
 	padding-bottom: 20px;
+}
+
+.info-wrapper {
+	position: relative;
+	width: 1518px;
+	height: 229px;
+	margin: 0 auto;
+	background: url(../info/info-pic-1.jpg) -10px 0px no-repeat;
+}
+
+.info-wrapper {
+	color: white;
+	font-size: 24px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding-right: 80px;
+	text-align: right;
+}
+
+footer {
+	
+}
+
+.footer-wrapper {
+	padding: 50px 0;
+	width: 1518px;
+	background: black;
+	margin: 0 auto;
+}
+
+.footer-content-wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer-left {
+	padding-right: 20px;
+	color: white;
+	font-size: 24px;
+	line-height: 48px;
+}
+
+form{
+	width: 600px;
+	text-transform: uppercase;
+	border: 2px solid white;
+}
+
+.form-input-name {
+	width: 100%;
+	height: 60px;
+	background: none;
+	border-bottom: 3px solid white;
+	text-align: center;
+	text-transform: uppercase;
+	color: white;
+}
+
+.form-input-tel {
+	width: 100%;
+	height: 60px;
+	background: none;
+	border-bottom: 3px solid white;
+	text-align: center;
+	text-transform: uppercase;
+	color: white;
+}
+
+.form-input-email {
+	width: 100%;
+	height: 60px;
+	background: none;
+	border-bottom: 3px solid white;
+	text-align: center;
+	text-transform: uppercase;
+	color: white;
+}
+
+.form-input-text{
+	width: 100%;
+	height: 120px;
+	background: none;;
+	text-align: left;
+	text-transform: uppercase;
+	color: white;
+	padding: 10px;
+	border: none;
+}
+
+.form-input-submit{
+	display: block;
+	background: none;
+	border: 3px solid white;
+	text-transform: uppercase;
+	color: white;
+	text-align: center;
+	padding: 5px 15px;
+	margin: 10px auto;
+	border-radius: 10px;
+}
+
+.location {
+	margin-top: 30px;
 }
