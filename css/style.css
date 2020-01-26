@@ -470,6 +470,10 @@ form{
 		flex-wrap: wrap;
 		justify-content: center;
 	}
+	.content-wrapper {
+		background: url(../img/background-tatoo.jpg) repeat-y;
+		background-size: 100%; 
+	}
 	.about-header {
 		padding-top: 41px;
 		font-size: 35px;
@@ -478,6 +482,7 @@ form{
 	}
 	.about-text {
 		margin-left: 0;
+		margin: 30px 0;
 	}
 	.online {
 		width: 320px;
@@ -514,11 +519,12 @@ form{
 		align-items: center;
 		width: 320px;
 	}
-	.services {
-		padding-bottom: 30px;
+	.works-photo {
+		padding-top: 30px;
 	}
 	.services-pic-wrapper {
-		background: none;
+		background: url(../img/background-tatoo.jpg) 0 -75px repeat-y;
+		background-size: 100%; 
 	}
 	.services-text {
 		display: none;
@@ -556,6 +562,10 @@ form{
 		padding: 0;
 		padding-top: 32px;
 
+	}
+	.works {
+		background: url(../img/background-tatoo.jpg) repeat-y;
+		background-size: 100%; 
 	}
 	.works-header {
 		display: none;
