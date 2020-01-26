@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Сайт!</title>
-	<meta name="viewport" content="width=1518">
+	<meta name=viewport content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/style.css">
 	<!-- Yandex.Metrika counter -->
 	<script type="text/javascript" >
@@ -23,7 +23,7 @@
 </head>
 <body>
 	<div class="wrapper">
-		<header class="header">
+		<header class="header" id="main">
 			<div class="header-wrapper">
 				<span class="title">ТАТУМСК.РФ</span>
 				<div class="menu">
@@ -37,16 +37,16 @@
 						<a href="#"class="menu-item-text">УДАЛЕНИЕ</a>
 					</div>
 					<div class="nav-item">
-						<a href="#" class="nav-item-text">Главная</a>
-						<a href="#" class="nav-item-text">Обо мне</a>
-						<a href="#" class="nav-item-text">Услуги</a>
-						<a href="#" class="nav-item-text">Работы</a>
-						<a href="#" class="nav-item-text">Контакты</a>
+						<a href="#main" class="nav-item-text">Главная</a>
+						<a href="#about" class="nav-item-text">Обо мне</a>
+						<a href="#services" class="nav-item-text">Услуги</a>
+						<a href="#works" class="nav-item-text">Работы</a>
+						<a href="#contacts" class="nav-item-text">Контакты</a>
 					</div>
 				</div>
 			</div>
 		</header>
-		<section class="about">
+		<section class="about" id="about">
 			<div class="content-wrapper">
 				<div class="container">
 					
@@ -68,7 +68,7 @@
 										Запишись он-лайн и получи скидку на услугу!
 									</div>
 									<div class="online-button">
-										<a href="#">
+										<a href="price.html">
 											500 руб
 										</a>
 									</div>
@@ -79,7 +79,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="services">
+		<section class="services" id="services">
 			<div class="services-pic-wrapper">
 				<div class="container">
 					<div class="services-wrapper">
@@ -92,7 +92,7 @@
 									<span>ТАТУ</span>
 								</div>
 								<div class="service-item-bottom blue">
-									<span>от 2000 руб</span>
+									<a href="price.html">от 2000 руб</a>
 								</div>
 							</div>
 							<div class="service-item">
@@ -100,7 +100,7 @@
 									<span>ТАТУАЖ</span>
 								</div>
 								<div class="service-item-bottom yellow">
-									<span>от 4000 руб</span>
+									<a href="price.html">от 4000 руб</a>
 								</div>
 							</div>
 							<div class="service-item">
@@ -108,7 +108,7 @@
 									<span>УДАЛЕНИЕ</span>
 								</div>
 								<div class="service-item-bottom green">
-									<span>от 1500 руб</span>
+									<a href="price.html">от 1500 руб</a>
 								</div>
 							</div>
 						</div>
@@ -116,7 +116,7 @@
 				</div>			
 			</div>
 		</section>
-		<section class="works">
+		<section class="works" id="works">
 			<div class="container">
 				<div class="works-wrapper">
 					<div class="works-header">
@@ -188,17 +188,25 @@
  				</div>
 			</div>
 		</section>
-		<footer>
+		<footer id="contacts">
 			<div class="footer-wrapper">
 				<div class="container">
 					<div class="footer-content-wrapper">
 						<div class="footer-left">
-							Салон котром я принимаю находится по адресу:<br>
+							Салон в котром я принимаю находится по адресу:<br>
 							г. Москва ул Мартеновская д 15,<br>
 							Салон красоты “Март”.<br>
 							Предварительную 
 							консультацию можно получить по телефону или
 							Whatsapp.
+						</div>
+						<div class="socials">
+							<a href="" class="instagram">
+								<img src="img/instagram.png">
+							</a>
+							<a href="https://api.whatsapp.com/send?phone=79263485034&text=Обращение_с_сайта" class="whatsapp">
+								<img src="img/whatsapp.png">
+							</a>
 						</div>
 						<div class="footer-right">
 							<div class="form">

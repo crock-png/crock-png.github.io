@@ -1,27 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
 * {
 	box-sizing: border-box;
 	margin: 0px;
 	padding: 0px;
 }
 
-.wrapper {
-	min-width:998px;
-	overflow:hidden;
-	-moz-background-size:100%;
-	-webkit-background-size:100%;
-	-o-background-size:100%;
-	background-size:100%;
-}
-
 .header {
-	width: 1518px;
-	height: 805px;
+	width: 100%;
 	margin: 0 auto;
 }
 
 .header-wrapper {
 	position: relative;
-	width: 1518px;
+	width: 100%;
 	height: 1051px;
 	background:
 		url(../img/background-gradient.png) 0 495px no-repeat,
@@ -40,6 +32,7 @@
 	margin-left: auto;
 	margin-right: auto;
 	color: black;
+	font-weight: 900;
 	-webkit-text-stroke: 1px white;
    	/*-webkit-text-fill-color: white;*/
 
@@ -76,15 +69,13 @@
 }
 
 .content-wrapper {
-	width: 1518px;
-	height: 1280px;
 	background: url(../img/background-tatoo.jpg) no-repeat;
 	background-size: 1518px auto;
 	margin: 0 auto;
 }
 
 .container {
-	width: 1000px;
+	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -133,6 +124,16 @@
 	padding: 22px 15px; 
 	font-size: 21px;
 	background-color: white;
+}
+
+.about-me {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
 .online-wrapper {
@@ -186,16 +187,15 @@
 }
 
 .services {
-	height: 851px;
-	width: 1518px;
 	margin: 0 auto;
 }
 .services-pic-wrapper {
 	height: 100%;
 	background: 
 		url(../img/background-tatooes.jpg) 0px 360px no-repeat,
+		url(../img/background-tatooes2.jpg) 0px 335px no-repeat,
 		url(../img/background-tatoomaster.jpg) no-repeat;
-	background-size:auto auto, 1518px auto;
+	background-size: auto auto, auto auto, 1518px auto;
 }
 
 .services-wrapper {
@@ -258,30 +258,29 @@
 
 }
 
-.service-item-bottom span{
-
+.service-item-bottom a{
+	display: block;
+	text-decoration: none;
 	font-size: 25px;
 	color: white;
 	padding: 13px 30px;
 }
 
-.blue span{
+.blue a{
 		border: 2px solid #00b9e7;
 }
 
-.yellow span{
+.yellow a{
 		border: 2px solid #ffcb00;
 }
 
-.green span{
+.green a{
 		border: 2px solid #66bf0d;
 }
 
 .works {
-	width: 1518px;
 	padding-bottom:40px;
 	margin: 0 auto;
-
 }
 
 .works-wrapper {
@@ -311,8 +310,6 @@
 }
 
 .sertificates {
-	width: 1518px;
-	height: 963px;
 	padding-top: 27px;
 	padding-bottom: 7px;
 	background: #767897;
@@ -335,7 +332,6 @@
 
 .info-wrapper {
 	position: relative;
-	width: 1518px;
 	height: 229px;
 	margin: 0 auto;
 	background: url(../info/info-pic-1.jpg) -10px 0px no-repeat;
@@ -354,10 +350,11 @@
 footer {
 	
 }
-
+.socials {
+	display: none;
+}
 .footer-wrapper {
 	padding: 50px 0;
-	width: 1518px;
 	background: black;
 	margin: 0 auto;
 }
@@ -435,4 +432,182 @@ form{
 
 .location {
 	margin-top: 30px;
+}
+
+@media (max-width: 1024px) {
+	.header-wrapper {
+		width: 100%;
+		height: 400px;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: center;
+		-ms-align-items: center;
+		align-items: center;
+		
+		background:
+			url(../img/background-tatoomaster.jpg) no-repeat;
+		background-size: auto 400px;
+		padding-top: 0;
+	}
+	.title {
+		font-size: 34px;
+		text-shadow: none;
+		letter-spacing: 0;
+		margin-left: auto;
+		margin-right: auto;
+		color: white;
+		font-weight: 900;
+		-webkit-text-stroke: 0px black;
+	}
+	.menu {
+		display: none;
+	}
+	.about {
+		margin-top: 0;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.about-header {
+		padding-top: 41px;
+		font-size: 35px;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	.about-text {
+		margin-left: 0;
+	}
+	.online {
+		width: 320px;
+		height: 328px;
+		border-radius: 100%;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: center;
+		-ms-align-items: center;
+		align-items: center;
+	}
+	.online-wrapper {
+		justify-content: center;
+	}
+	.online-pic-wrapper {
+		background: none;
+		text-align: center;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: center;
+		-ms-align-items: center;
+		align-items: center;
+		margin-top: 60px;
+	}
+	.online-content {
+		justify-content: center;
+		-ms-align-items: center;
+		align-items: center;
+		width: 320px;
+	}
+	.services {
+		padding-bottom: 30px;
+	}
+	.services-pic-wrapper {
+		background: none;
+	}
+	.services-text {
+		display: none;
+	}
+	.service-item-wrapper {
+		flex-wrap: wrap;
+		justify-content: space-around;
+		padding-top: 0;
+	}
+	.service-item {
+		width: 320px;
+		height: 320px;
+		border-radius: 100%;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: center;
+		-ms-align-items: center;
+		align-items: center;
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+		margin-top: 30px;
+	}
+	.service-item-top {
+		height: auto;
+	}
+	.service-item-bottom {
+		height: auto;
+		justify-content: center;
+		padding: 0;
+		padding-top: 32px;
+
+	}
+	.works-header {
+		display: none;
+	}
+	.works-photo {
+		justify-content: center;
+	}
+	.works-photo img {
+		width: 150px;
+		height: 150px;
+		padding: 5px;
+	}
+
+	.sertificates {
+		display: none;
+	}
+	.info {
+		display: none;
+	}
+	.footer-content-wrapper {
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+		justify-content: center;
+		-ms-align-items: center;
+		align-items: center;
+	}
+	.footer-left {
+		padding-left: 20px;
+	}
+	form {
+		width: 100%;
+	}
+	.location iframe {
+		width: 100%;	
+	}
+	.footer-left {
+		text-align: center;
+	}
+	.socials {
+		margin-top: 45px;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: center;
+	}
+	.socials img {
+		width: ;
+		margin: 10px;
+	}
 }
