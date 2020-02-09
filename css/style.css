@@ -478,6 +478,9 @@ form{
 	.menu {
 		display: none;
 	}
+	.nav-item {
+		display: none;
+	}
 	.about {
 		margin-top: 0;
 		flex-wrap: wrap;
