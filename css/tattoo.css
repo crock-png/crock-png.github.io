@@ -1,0 +1,99 @@
+
+* {
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	font-family: "Arial";
+}
+.wrapper {
+	background: url(../img/background-tatoo.jpg) repeat-y;
+	background-position: center 0;
+	background-size: 100% auto;
+	overflow: hidden;
+	padding-bottom: 50px;
+}
+.container {
+	width: 1000px;
+	margin: 0 auto;
+}
+.tatoo {
+	height: calc(100vh - 100px);
+}
+.price-header {
+	width: 310px;
+	height: 310px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+	text-align: center;
+	font-size: 64px;
+	color: white;
+	background: black;
+	border-radius: 50%;
+	margin: 50px auto;
+}
+h1 {
+	font-size: 70px;
+}
+.removing h1 {
+	font-size: 50px;
+}
+.price-texts {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	font-size: 20px;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.price-text {
+	width: 45%;
+}
+.price-texts .price-text:nth-child(2) {
+	text-align: right;
+}
+.price-texts .price-text:nth-child(3) {
+	width: 55%;
+	text-align: center;
+	font-weight: 600;
+	margin: 30px auto 0;
+}
+@media (max-width: 1040px) {
+	.container {
+		width: 100%;
+		/*padding: 0 20px;*/
+	}
+	.price-texts {
+		padding: 0 20px;
+	}
+}
+
+@media (max-width: 550px) {
+	.price-texts {
+		display: block;
+	}
+	.price-text {
+		width: 100%;
+	}
+	.price-texts .price-text:nth-child(2) {
+	text-align: left;
+	margin-top: 25px;
+	}
+}
+@media (max-width: 460px) {
+	.price-texts .price-text:nth-child(3) {
+		width: 80%;
+		text-align: center;
+		font-weight: 600;
+		margin: 30px auto 0;
+	}
+}

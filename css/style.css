@@ -6,6 +6,14 @@
 	padding: 0px;
 }
 
+body {
+	font-family: "Arial";
+}
+
+.wrapper {
+	width: 100%;
+	overflow: hidden;
+}
 .header {
 	width: 100%;
 	margin: 0 auto;
@@ -14,13 +22,11 @@
 .header-wrapper {
 	position: relative;
 	width: 100%;
-	height: 1051px;
+	height: 845px;
 	background:
-		url(../img/background-gradient.png) 0 495px no-repeat,
-		url(../img/background.jpg) 50% -20px no-repeat,
-		url(../img/background-substrate.png) no-repeat,
-		url(../img/background-wood.jpg) no-repeat;
-	background-size: contain,1300px auto, 1518px 1050px, contain;
+		url(../img/header-background.png) no-repeat;
+	background-position: center -9px;
+	background-size: auto 1108px;
 	padding-top: 280px;
 	text-align: center;
 }
@@ -39,7 +45,6 @@
 }
 
 .menu {
-	position: relative;
 	display: flex;
 	width: 600px;
 	margin-right: auto;
@@ -69,22 +74,26 @@
 }
 
 .content-wrapper {
+	width: 100%;
 	background: url(../img/background-tatoo.jpg) no-repeat;
+	background-position: center 0;
 	background-size: 1518px auto;
 	margin: 0 auto;
 }
 
 .container {
-	width: 100%;
+	width: 1000px;
 	margin-left: auto;
 	margin-right: auto;
 }
+@media (max-width: 1030px) {
+	.container {
+		width: 100%;
+		padding: 0 15px;
+	}
+}
 
 .nav-item {
-	position: absolute;
-	right: -350px;
-	bottom: -480px;
-	z-index: 9999;
 	display: flex;
 	justify-content: space-between;
 	width: 750px;
@@ -107,23 +116,23 @@
 }
 
 .about-header {
-	padding-top: 175px;
 	display: block;
+	margin-bottom: 20px;
 	font-size: 40px;
 	color: black;
 }
 
 .about {
 	display: flex;
-	margin-top: 25px;
 }
 
 .about-text {
 	display: block;
 	margin-left: 15px;
-	padding: 22px 15px; 
+	padding: 22px 22px; 
 	font-size: 21px;
 	background-color: white;
+	text-align: justify;
 }
 
 .about-me {
@@ -162,7 +171,6 @@
 .online-text {
 	width: 299px;
 	color: #ffffff;
-/*	font-family: "Arial - Bold MT";*/
 	font-size: 30px;
 	font-weight: 400;
 	line-height: 30px;
@@ -180,10 +188,13 @@
 	border: 3px solid white;
 	text-decoration: none;
 	color: white;
-/*	font-family: "Myriad Pro";*/
 	font-size: 22px;
 	font-weight: 400;
 	letter-spacing: 0.9px;
+}
+
+.online-button a:last-child {
+	display: none;
 }
 
 .services {
@@ -192,9 +203,10 @@
 .services-pic-wrapper {
 	height: 100%;
 	background: 
-		url(../img/background-tatooes.jpg) 0px 360px no-repeat,
-		url(../img/background-tatooes2.jpg) 0px 335px no-repeat,
-		url(../img/background-tatoomaster.jpg) no-repeat;
+		url(../img/background-tatooes.jpg) calc(50% - 445px) 360px no-repeat,
+		url(../img/background-tatooes2.jpg) calc(50% - 430px) 335px no-repeat,
+		url(../img/background-tatoomaster.jpg) center 0px no-repeat;
+	/*background-position: 0 100%, 0 100%, center 0;*/
 	background-size: auto auto, auto auto, 1518px auto;
 }
 
@@ -334,7 +346,8 @@
 	position: relative;
 	height: 229px;
 	margin: 0 auto;
-	background: url(../info/info-pic-1.jpg) -10px 0px no-repeat;
+	/*background: url(../info/info-pic-1.jpg) -10px 0px no-repeat;*/
+	background: linear-gradient(to top, #f6ae48 0%, #f6ae48 50%, #303263 50%);
 }
 
 .info-wrapper {
@@ -448,8 +461,8 @@ form{
 		align-items: center;
 		
 		background:
-			url(../img/background-tatoomaster.jpg) no-repeat;
-		background-size: auto 400px;
+			url(../img/background-tatoomaster.jpg) center 0 no-repeat;
+		background-size: 100% auto;
 		padding-top: 0;
 	}
 	.title {
@@ -513,6 +526,12 @@ form{
 		align-items: center;
 		margin-top: 60px;
 	}
+	.online-button a:first-child {
+		display: none;
+	}
+	.online-button a:last-child {
+		display: block;
+	}
 	.online-content {
 		justify-content: center;
 		-ms-align-items: center;
@@ -535,8 +554,8 @@ form{
 		padding-top: 0;
 	}
 	.service-item {
-		width: 320px;
-		height: 320px;
+		width: 290px;
+		height: 290px;
 		border-radius: 100%;
 		display: -webkit-flex;
 		display: -moz-flex;
@@ -574,8 +593,8 @@ form{
 		justify-content: center;
 	}
 	.works-photo img {
-		width: 150px;
-		height: 150px;
+		width: 145px;
+		height: 145px;
 		padding: 5px;
 	}
 
@@ -617,7 +636,18 @@ form{
 		justify-content: center;
 	}
 	.socials img {
-		width: ;
 		margin: 10px;
+	}
+}
+@media (max-width: 700px) {
+	.header-wrapper {
+		background:
+			url(../img/background-tatoomaster.jpg) center 0 no-repeat;
+		background-size: auto 400px;
+	}
+}
+@media (max-width: 450px) {
+	.works-photo img:last-child {
+		display: none;
 	}
 }
